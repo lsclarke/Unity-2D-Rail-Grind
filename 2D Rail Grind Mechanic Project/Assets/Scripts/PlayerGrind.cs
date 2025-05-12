@@ -1,9 +1,7 @@
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Splines;
-using UnityEngine.UIElements;
 
-public class PlayerRailGrind : MonoBehaviour
+public class PlayerGrind : MonoBehaviour
 {
     [Header("Rail Detection")]
     //Check for layer
@@ -22,15 +20,13 @@ public class PlayerRailGrind : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movementDirection;
     private Quaternion originalRotation;
-    private Player player;
+    private PlayerMovement player;
 
     public ParticleSystem railSparksParticle;
     private void Start()
     {
-        railSpline = null;
-        railCollider = null;
         rb = this.GetComponent<Rigidbody2D>();
-        player = this.GetComponent<Player>();
+        player = this.GetComponent<PlayerMovement>();
         originalRotation = transform.rotation;
     }
 
@@ -58,7 +54,6 @@ public class PlayerRailGrind : MonoBehaviour
         {
             /*Set all variables to their original values*/
             player.JumpSpeed = 7f;
-            railCollider = null;
             OnRail = false;
             contactPoint = transform.position;
             rb.gravityScale = 1f;
@@ -78,7 +73,7 @@ public class PlayerRailGrind : MonoBehaviour
             rb.linearVelocity = new Vector2(player.MoveSpeed, rb.linearVelocityY);
             break;
         }
-        while(transform.localScale.x == -1)
+        while (transform.localScale.x == -1)
         {
             rb.linearVelocity = new Vector2(-player.MoveSpeed, rb.linearVelocityY);
             break;

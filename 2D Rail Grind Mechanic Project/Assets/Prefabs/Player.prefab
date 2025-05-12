@@ -4845,8 +4845,8 @@ GameObject:
   - component: {fileID: 100078269684932341}
   - component: {fileID: 2065875863002671684}
   - component: {fileID: 8739310794928362743}
-  - component: {fileID: 4513819282032726754}
-  - component: {fileID: 9082432412560670130}
+  - component: {fileID: 6019541309235445360}
+  - component: {fileID: 7954938005576608604}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -4998,7 +4998,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4513819282032726754
+--- !u!114 &6019541309235445360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5007,14 +5007,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3412894852033911922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b00a70eeaedb1046b52d98f8b1a660b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a0f737dc8f4af04ca21d0ab39deb0c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   physics: {fileID: 8739310794928362743}
   MoveSpeed: 4
   MoveSpeedMultiplier: 1
-  Acceleration: 2
-  Decceleration: 5
+  Acceleration: 3
+  Decceleration: 7
   canJump: 0
   isJumping: 0
   JumpSpeed: 7
@@ -5024,7 +5024,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   facingRight: 0
---- !u!114 &9082432412560670130
+--- !u!114 &7954938005576608604
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5033,14 +5033,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3412894852033911922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d854823cc8e995943a776225f7b58c24, type: 3}
+  m_Script: {fileID: 11500000, guid: c1a31b2a483475e4b877091054e747e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   railLayer:
     serializedVersion: 2
     m_Bits: 128
-  lineOffset: 0
-  lineDistance: 0.5
-  railOffset: 0.55
-  GrindSpeed: 1
+  lineOffset: -0.01
+  lineDistance: 1.17
+  railOffset: 0.6
+  GrindSpeed: 2
   railSparksParticle: {fileID: 8122818957349423718}
