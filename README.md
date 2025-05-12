@@ -7,7 +7,7 @@ Create a spline and add your prefab gameObject to the Spline Instantiate Script
 -----------------------------------------------------------------------------------------------------------------
 ![Rail Grind Set Up 1](https://github.com/user-attachments/assets/f2c3803d-b4b9-4fac-abb6-805e67d86d5c)
 
-Make sure when adding your prefab gameObject you have the settings of your Spline Instantiate to look like the image provided, This will ensure that your sprite/gameObject maintains the same view in game and isn't affected by the splines rotation. Make sure that your prefab object also has a box collider 2d and a rail layer your player can detect. This is creating multiple points on the spline for the player to detect and move along.
+Make sure when adding your prefab gameObject you have the settings of your Spline Instantiate to look like the image provided. This will ensure that your sprite/gameObject maintains the same view in game and isn't affected by the splines rotation. Make sure that your prefab object also has a box collider 2d and a rail layer your player can detect. This is creating multiple points on the spline for the player to detect and move along.
 -----------------------------------------------------------------------------------------------------------------
 ![Inpsector Setting for Spline](https://github.com/user-attachments/assets/c788d45d-d3c9-4a42-abcd-9a0749002e6a)
 ![Screenshot 2025-05-12 002319](https://github.com/user-attachments/assets/3c6603b3-b68b-4396-8322-0130563e5eef)
